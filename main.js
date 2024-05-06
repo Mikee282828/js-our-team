@@ -7,5 +7,5 @@ let team = [{Nome: "Wayne Barnett", Ruolo: "Founder & CEO", Immagine: "wayne-bar
 ];
 
 for(let i = 0; i<team.length; i++){
-    console.log(`Nome: ${team[i].Nome}, Ruolo: ${team[i].Ruolo}`);
+    document.querySelector("body").innerHTML += `Nome: ${team[i].Nome}, Ruolo: ${team[i].Ruolo}, Immagine: ${team[i].Immagine} <br>`;
 }
