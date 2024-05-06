@@ -5,7 +5,9 @@ let team = [{Nome: "Wayne Barnett", Ruolo: "Founder & CEO", Immagine: "wayne-bar
             {Nome:"Scott Estrada", Ruolo:"Developer", Immagine:"scott-estrada-developer.jpg" },
             {Nome:"Barbara Ramos", Ruolo:"Graphic Designer", Immagine:"barbara-ramos-graphic-designer.jpg" }
 ];
-
-for(let i = 0; i<team.length; i++){
-    document.querySelector("body").innerHTML += `Nome: ${team[i].Nome}, Ruolo: ${team[i].Ruolo}, Immagine: ${team[i].Immagine} <br>`;
+StampaInfo(team);
+function StampaInfo(array){
+    for(let i = 0; i<array.length; i++){
+        document.querySelector("body").innerHTML += `Nome: ${array[i].Nome}, Ruolo: ${array[i].Ruolo}, Immagine: ${array[i].Immagine} <br>`;
+    }
 }
