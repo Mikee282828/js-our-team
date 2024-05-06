@@ -6,3 +6,6 @@ let team = [{Nome: "Wayne Barnett", Ruolo: "Founder & CEO", Immagine: "wayne-bar
             {Nome:"Barbara Ramos", Ruolo:"Graphic Designer", Immagine:"barbara-ramos-graphic-designer.jpg" }
 ];
 
+for(let i = 0; i<team.length; i++){
+    console.log(`Nome: ${team[i].Nome}, Ruolo: ${team[i].Ruolo}`);
+}
