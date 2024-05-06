@@ -10,6 +10,13 @@ StampaInfo(team);
 
 function StampaInfo(array) {
     for (let i = 0; i < array.length; i++) {
-        document.querySelector("body").innerHTML += `Nome: ${array[i].Nome}, Ruolo: ${array[i].Ruolo}<br><img  src="./img/${array[i].Immagine}"> <br>`;
+        document.querySelector("#areaLavoro").innerHTML +=
+           `<div class="card" style="width: 18rem;">
+                <img src="./img/${array[i].Immagine}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${array[i].Nome}</h5>
+                        <p class="card-text">${array[i].Ruolo}</p>
+                    </div>
+            </div>`;
     }
 }
